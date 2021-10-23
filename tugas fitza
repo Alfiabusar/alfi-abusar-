@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Form Pemesanan Pizza</title>
+ <meta charset="UTF-8">
+ </head>
+ <body bgcolor="beige" text="bron">
+     <h2>Pizza Alfi Abusar | Formulir Pemesanan</h2>
+     <p>Kami sekarang  </p>
+     <fieldset>
+         <legend><b>Informasi anda</b></legend>
+        <ol>
+            <li><label>Nama: <input type="text" name="nama"></label></li>
+            <li><label>Alamat: <input type="text" name="alamat"></label></li>
+            <li><label>Nomor Telfon <input type="text" name="nomortelfon"></label></li>
+            <li><label>Email: <input type="text" name="email"></label></li>
+            Catatan Pemesanan:<br/><textarea name="catatanpemesanan" cols="40" rows="3"></textarea></li>
+        </ol>
+     </fieldset>
+     <h3>Buat Pizza Impianmu</h3>
+     <h4>Bahan Roti (pilih salah satu):</h4>
+     <form>  
+         <input type="radio" name="bahan roti" value="original">Saya ingin original<br>
+         <input type="radio" name="bahan roti" value="banyak biji-bijian">Saya ingin banyak biji-bijian<br>
+         <input type="radio" name="bahan roti" value="isi keju">Saya ingin isi keju<br>
+         <input type="radio" name="bahan roti" value="tanpa gula">Saya ingin tanpa gula<br>
+     </form>
+     <h4>Toppings (pilih sebanyak yang kamu mau):</h4>
+     <form>
+         <input type="checkbox" id="roti1" name="roti1" value="original">
+         <label for="roti1">Saya ingin original</label><br>
+         <input type="checkbox" id="roti2" name="roti2" value="banyak biji-bijian">
+         <label for="roti2">Saya ingin banyak biji-bijian</label><br>
+         <input type="checkbox" id="roti3" name="roti3" value="isi keju">
+         <label for="roti3">Saya ingin isi keju</label><br>
+         <input type="checkbox" id="roti4" name="roti4" value="tanpa gula">
+         <label for="roti4">Saya ingin tanpa gula</label><br>
+     </form>
+     <br/>
+     <label >Banyaknya Pizza:<input type="number" name="pizza" min="1" max="6"></label>
+     <br/>
+     <p><input type="submit" value="Pesan"> <input type="reset"></p>
+</body>
+</html>
